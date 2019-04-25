@@ -49,7 +49,7 @@ int main(int argc,char **argv){
 	printf("Loaded data for files\n");
 
 	for (int i = 0; i < LIMIT; i++){
-		printf("%s --- >  %s\n", names[i], paths[i]);
+		printf("Extracting features of %s\n", names[i]);
 
 		Image *img = NULL;
 		FeatureVector1D *fvMS = NULL, *fvSS = NULL;
@@ -62,14 +62,12 @@ int main(int argc,char **argv){
 		strcat(outfile_name, names[i]);
 		strcat(outfile_name, "_MS.txt");
 		WriteFeatureVector1D(fvMS, outfile_name);
-		printf("termino feature 1 %s\n", outfile_name);
 
 		fvSS = SS_ExtractionAlgorithm(img);
 		strcpy(outfile_name, "mpeg7_features/");
 		strcat(outfile_name, names[i]);
 		strcat(outfile_name, "_SS.txt");
 		WriteFeatureVector1D(fvSS, outfile_name);
-		printf("termino feature 2 %s\n", outfile_name);
 
 		DestroyFeatureVector1D(&fvSS);
 		DestroyFeatureVector1D(&fvMS);
