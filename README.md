@@ -18,13 +18,13 @@ This repo implements the assignment 7 of [MO805](http://www.ic.unicamp.br/~rtorr
 Clone the repository
 
 ```
-git clone
+git clone https://github.com/RQuispeC/mo805-assignment7.git
 ```
 
 Then run all the scripts using the available Makefile
 
 ```
-cd 
+cd mo805-assignment7
 make
 ```
 
