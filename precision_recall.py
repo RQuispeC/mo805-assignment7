@@ -109,9 +109,9 @@ if __name__ == '__main__':
 
   print("Generating Precision x Recall curve")
   plt.title('MO805 - Test 1 - question 4')
-  plt.plot(r_1, p_1, label = 'Descriptor 1')
-  plt.plot(r_2, p_2, label = 'Descriptor 2')
-  plt.plot(r_3, p_3, label = 'Descriptor 3')
+  plt.plot(r_1, p_1, label = 'Descriptor 1',  linestyle="-")
+  plt.plot(r_2, p_2, label = 'Descriptor 2',  linestyle="--")
+  plt.plot(r_3, p_3, label = 'Descriptor 3',  linestyle="-.")
   plt.legend(loc = 'lower left')
   plt.xlim([0, 1.01])
   plt.ylim([0, 1.01])
