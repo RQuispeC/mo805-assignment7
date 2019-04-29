@@ -38,6 +38,3 @@ The code was tested under a linux distribution with :
 * MatplotLib
 * PIL
 
-# Notes
-
-I used euclidean distance to compare feacture vectors for both Multiscale fractal and Segment salience descriptors. MO455 code offers a different distance function for Segment salience but euclidean may get better performance.
